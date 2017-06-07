@@ -1,0 +1,24 @@
+body{
+	text-align: center;
+}
+form{
+	font-family: "Helvetica";
+	color: darkgray;
+	font-size: 10pt;
+	display: inline-block;
+	margin: 10px;
+	text-align: left;
+}
+
+#lowercenter{
+	width: auto;
+	height: auto;
+	display: inline-block;
+
+	
+}
+
+#canvasdiv{
+	display: inline-block;
+	margin-top: 5px;
+}
