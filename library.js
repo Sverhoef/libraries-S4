@@ -16,34 +16,31 @@ var Module = (function () {
         
   emotion: function (FE) {
 	  if (FE == 1) {
-		var answer =  ctx.arc(85, 90, 20, 0, Math.PI, false);
+		var answer =  ctx.arc(75, 90, 30, 0, Math.PI, false);
 	  }
 	  if (FE == 2) {
-		var answer = ctx.arc(85, 105, 20, 0, Math.PI, true);
+		var answer = ctx.arc(75, 105, 30, 0, Math.PI, true);
 	  }
 	  return (answer);
   },
 		
   eyecolor: function (FE) {
 	  if (FE == 1 || FE == 2) {
-		var answer =  ctx.arc(95,75,5,0,2*Math.PI);
-		var answer =  ctx.arc(75,75,5,0,2*Math.PI);
+		var answer =  ctx.arc(60,60,10,0,2*Math.PI);
+		var answer =  ctx.arc(90,60,10,0,2*Math.PI);
 	  }
 
 	  return (answer);
   },
 		
   bmiToPicture: function (bmi){
-	  
 	  var canvas = document.getElementById('BMI');
       var context = canvas.getContext('2d');
       var imageObj = new Image();
 	  var link= "";
-
       imageObj.onload = function() {
         context.drawImage(imageObj, 0, 0, 154, 154 * imageObj.height / imageObj.width);
       };
-	  
 	  if (bmi <= 20){
 		  var link = 'http://i335404.iris.fhict.nl/images/man.jpg'
 	  }
@@ -55,8 +52,6 @@ var Module = (function () {
 	  } 
       imageObj.src = link;
   }
-
-
 };
 })();
 
